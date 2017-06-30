@@ -3,3 +3,4 @@
 document.querySelector(); - Retorna o primeiro elemento dentro do documento
 
 (elemento).textContent - pega o conteúdo do elemento
+
