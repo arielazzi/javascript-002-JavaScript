@@ -27,8 +27,11 @@ Com os parenteses é associando o retorno da função;
 ------------------------
 
 ## Função anônima 
- - 
+ - Função declarada diretamente no parametro do evento
 
-> titulo.addEventListener('click', function(){
-> 
-> });
+```js
+titulo.addEventListener('click', function(){
+   
+});
+
+```
