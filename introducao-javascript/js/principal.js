@@ -41,8 +41,10 @@ for (var i = 0; i < pacientes.length; i++) {
 
 }
 
-titulo.addEventListener('click', mostraMensagem);
+var botaoAdicionar = document.querySelector('#adicionar-paciente');
 
-function mostraMensagem() {
-    console.log("olá eu fui clicado!")    
-}
+titulo.addEventListener('click', function(){
+
+});
+
+
