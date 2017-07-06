@@ -12,3 +12,23 @@
 (elemento).style.(prop css com camelCase) - Altera as propriedades do css (não é bem visto misturar os mundos de js com css)
 
 (elemento).classList.add("nome classe") - adiciona uma nova classe 
+
+------------------------
+
+Diferença entre : 
+ - botao.addEventListener('click', botaoHandler());
+
+e
+
+ - botao.addEventListener('click', botaoHandler);
+
+Com os parenteses é associando o retorno da função;
+
+------------------------
+
+## Função anônima 
+ - 
+
+> titulo.addEventListener('click', function(){
+> 
+> });
