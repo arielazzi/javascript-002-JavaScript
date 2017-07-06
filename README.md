@@ -2,32 +2,34 @@
 
 (elemento).querySelector(); - Retorna o primeiro elemento dentro do documento
 
-(elemento).textContent - pega o conte˙do do elemento
+(elemento).textContent - pega o conte√∫do do elemento
 
-(elemento).querySelectorAll - Essa funÁ„o nos retorna um array com todos os elementos que possuem a mesma classe
+(elemento).querySelectorAll - Essa fun√ß√£o nos retorna um array com todos os elementos que possuem a mesma classe
 
 
-(elemento).toFixed(qtd) -  e ela recebe por par‚metro a quantidade de casas decimais que queremos exibir do n˙mero.
+(elemento).toFixed(qtd) -  e ela recebe por par√¢metro a quantidade de casas decimais que queremos exibir do n√∫mero.
 
-(elemento).style.(prop css com camelCase) - Altera as propriedades do css (n„o È bem visto misturar os mundos de js com css)
+(elemento).style.(prop css com camelCase) - Altera as propriedades do css (n√£o √© bem visto misturar os mundos de js com css)
 
 (elemento).classList.add("nome classe") - adiciona uma nova classe 
 
 ------------------------
 
-DiferenÁa entre : 
- - botao.addEventListener('click', botaoHandler());
-
+Diferen√ßa entre : 
+```js
+botao.addEventListener('click', botaoHandler());
+```
 e
+```js
+botao.addEventListener('click', botaoHandler);
+```
 
- - botao.addEventListener('click', botaoHandler);
-
-Com os parenteses È associando o retorno da funÁ„o;
+Com os parenteses √© associando o retorno da fun√ß√£o, e sem √© executado a fun√ß√£o;
 
 ------------------------
 
-## FunÁ„o anÙnima 
- - FunÁ„o declarada diretamente no parametro do evento
+## Fun√ß√£o an√¥nima 
+ - Fun√ß√£o declarada diretamente no parametro do evento
 
 ```js
 titulo.addEventListener('click', function(){
@@ -40,7 +42,7 @@ titulo.addEventListener('click', function(){
 
 ## PreventDefault
 
- - prevenir o comportamento padr„o do evento
+ - prevenir o comportamento padr√£o do evento
 
 ```js
 
