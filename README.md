@@ -35,3 +35,16 @@ titulo.addEventListener('click', function(){
 });
 
 ```
+
+---------
+
+## PreventDefault
+
+ - prevenir o comportamento padrão do evento
+
+```js
+
+botaoAdicionar.addEventListener('click', function(event){
+    event.preventDefault();
+});
+```
