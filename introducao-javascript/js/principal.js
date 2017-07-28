@@ -61,11 +61,19 @@ botaoAdicionar.addEventListener('click', function(event){
     var gorduraTd = document.createElement("td");
     var imcTd     = document.createElement("td");
 
-    nomeTd.textContent = nome;
-    pesoTd.textContent = peso;
-    alturaTd.textContent = altura;
+    nomeTd.textContent    = nome;
+    pesoTd.textContent    = peso;
+    alturaTd.textContent  = altura;
     gorduraTd.textContent = gordura;
-    imcTd.textContent = nome;
+    imcTd.textContent     = peso / (altura  * altura);
+
+    pacienteTr.appendChild(nomeTd);
+    pacienteTr.appendChild(pesoTd);
+    pacienteTr.appendChild(alturaTd);
+    pacienteTr.appendChild(gorduraTd);
+    pacienteTr.appendChild(imcTd);
+
+    console.log(pacienteTr);
     
 });
 
