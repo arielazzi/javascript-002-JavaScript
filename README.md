@@ -61,3 +61,50 @@ botaoAdicionar.addEventListener('click', function(event){
 });
 ```
 -----
+## createElement
+
+- Cria um elemento HTML em Javascript
+```js
+var nomeTd = document.createElement("td");
+```
+-----
+## value
+
+- Seleciona um valor de um input
+ ```js
+ var nome = form.nome.value;
+ ```
+-----
+## appendChild
+
+ - Insere um elemento como o último filho de um outro elemento.
+ ```js
+ pacienteTr.appendChild(nomeTd);
+ ```
+-----
+## event shortcut
+
+Para cada evento existente no JavaScript, há a propriedade on + nomeDoEvent. No caso, temos onclick para o evento click, onmouseover para o evento mouseover e assim por diante. Nesse caso, a função que desejamos executar é atribuída direto na propriedade. No entanto, essa forma tem uma limitação, como estamos guardando a função em uma propriedade, se adicionarmos outra função, essa sobrescreverá a anterior. Sendo assim, a boa prática é trabalhar com addEventListener() mesmo que você só queria adicionar um único evento.
+
+```js
+<button id="botao">clique-me</button>
+<script>
+
+    var botao = document.querySelector('#botao');
+
+    function botaoHandler() {
+
+        alert('Botão clicado');
+    }
+
+     function outroHandler() {
+
+        alert('Botão clicado também!');
+    }
+
+
+    botao.onclick = botaoHandler;
+    botao.onclick = outroHandler; // substitui botaoHandler
+</script>
+```
+
