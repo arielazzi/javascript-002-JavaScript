@@ -37,6 +37,16 @@ titulo.addEventListener('click', function(){
 });
 
 ```
+------------------------
+
+## Função Nomeada 
+ - Levam um nome em sua criação e que podem ser invocadas posteriormente
+
+```js
+function mostraMensagem(){
+    console.log("Fui clicado");
+}
+
 
 ---------
 
