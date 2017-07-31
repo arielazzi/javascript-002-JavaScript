@@ -46,7 +46,7 @@ titulo.addEventListener('click', function(){
 function mostraMensagem(){
     console.log("Fui clicado");
 }
-
+```
 
 ---------
 
