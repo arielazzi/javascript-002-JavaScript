@@ -1,14 +1,15 @@
 var botaoAdicionar = document.querySelector('#adicionar-paciente');
 
 botaoAdicionar.addEventListener('click', function(event){
+
     event.preventDefault();
 
     var form = document.querySelector("#form-adiciona");
 
-    var nome    = form.nome.value;
-    var peso    = form.peso.value;
-    var altura  = form.altura.value;
-    var gordura = form.gordura.value;
+    // Extrai informações do paciente do form
+    var paciente = obtemPacienteDoFormulario(form);
+
+    console.log(paciente);
 
     var pacienteTr = document.createElement("tr");
 
@@ -34,3 +35,17 @@ botaoAdicionar.addEventListener('click', function(event){
 
     tabela.appendChild(pacienteTr);
 });
+
+function obtemPacienteDoFormulario(form) {
+
+    var paciente = {
+        nome    : form.nome.value,
+        peso    : form.peso.value,
+        altura  : form.altura.value,
+        gordura : form.gordura.value,
+        imc     : calculaImc(form.peso.value, form.altura.value)
+    };
+
+    return paciente;
+
+}
