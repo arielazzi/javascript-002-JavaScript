@@ -108,3 +108,11 @@ Para cada evento existente no JavaScript, há a propriedade on + nomeDoEvent. No
 </script>
 ```
 
+-----
+## innerHTML
+
+ - Altera o conteúdo HTML.
+ ```js
+ var mensagemErro = document.querySelector("#mensagens-erro");
+ mensagemErro.innerHTML = "";
+ ```
