@@ -15,8 +15,7 @@ botaoAdicionar.addEventListener('click', function(event){
     var erros = validaPaciente(paciente);
 
     if(erros.length > 0) {
-        var mensagemErro = document.querySelector("#mensagem-erro");
-        mensagemErro.textContent = erros;
+        exibeMensagensDeErro(erros);
         return;
     }
 
@@ -31,6 +30,18 @@ botaoAdicionar.addEventListener('click', function(event){
     form.reset();
 });
 
+
+function exibeMensagensDeErro(erros) {
+    var ul = document.querySelector("#mensagens-erro");
+
+    erros.forEach(function(erro){
+        var li = document.createElement("li");
+        li.textContent = erro;
+        ul.appendChild(li);
+    });
+
+    mensagemErro.textContent = erros;
+}
 
 function obtemPacienteDoFormulario(form) {
 
