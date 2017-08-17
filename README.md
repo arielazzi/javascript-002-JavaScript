@@ -111,8 +111,32 @@ Para cada evento existente no JavaScript, há a propriedade on + nomeDoEvent. No
 -----
 ## innerHTML
 
- - Altera o conteúdo HTML.
+ - Altera o conteúdo HTML
  ```js
  var mensagemErro = document.querySelector("#mensagens-erro");
  mensagemErro.innerHTML = "";
+ ```
+ -----
+## dblclick
+
+ - Evento de clique duplo
+ ```js
+ tabela.addEventListener("dblclick", function(event) {
+ });
+ ```
+
+ -----
+## target
+
+ - Seleciona o "alvo" que sofreu o evento
+ ```js
+ event.target
+ ```
+ 
+ -----
+## parentNode
+
+ - Retorna o pai do elemento selecionado
+ ```js
+ event.target.parentNode
  ```
