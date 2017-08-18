@@ -140,3 +140,11 @@ Para cada evento existente no JavaScript, há a propriedade on + nomeDoEvent. No
  ```js
  event.target.parentNode
  ```
+ -----
+## Expressão regural
+
+ - Utilizado para filtrar uma palavra letra a letra
+ ```js
+  var expressao = new RegExp(this.value, "i");
+  if (expressao.test(nome)
+ ```
